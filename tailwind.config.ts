@@ -31,6 +31,8 @@ const config = {
       backgroundImage: {
         "default-gradient":
           "linear-gradient(90deg, #FBF332 0%, #F33 19.5%, #3239FB 43%, #3239FB 63.5%, #F33 84%, #FBF332 100%)",
+        "variant-gradient":
+          "linear-gradient(0deg, #FBF332 0%, #F33 19.5%, #3239FB 43%, #3239FB 63.5%, #F33 84%, #FBF332 100%)",
       },
       keyframes: {
         "accordion-down": {

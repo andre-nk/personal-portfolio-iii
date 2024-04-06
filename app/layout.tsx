@@ -88,6 +88,11 @@ const fivoSans = localFont({
       style: "normal",
     },
     {
+      path: "../public/fonts/FivoSans-Regular.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
       path: "../public/fonts/FivoSans-Medium.otf",
       weight: "500",
       style: "normal",
@@ -104,7 +109,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${GeistSans.variable} ${GeistMono.variable} ${fivoSans.variable} m-default`}
+        className={`${GeistSans.variable} ${GeistMono.variable} ${fivoSans.variable} font-sans`}
       >
         <SmoothScrollWrapper>{children}</SmoothScrollWrapper>
       </body>
