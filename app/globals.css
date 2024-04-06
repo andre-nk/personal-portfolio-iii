@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .m-default {
+    @apply px-6 2xl:container md:px-9 lg:px-24 2xl:mx-auto 2xl:px-0;
+  }
+}
