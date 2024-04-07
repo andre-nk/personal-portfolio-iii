@@ -10,6 +10,8 @@ export interface TypeArticlesFields {
   title: EntryFieldTypes.Symbol;
   content?: EntryFieldTypes.RichText;
   releasedDate: EntryFieldTypes.Date;
+  thumbnail: EntryFieldTypes.AssetLink;
+  isFeatured?: EntryFieldTypes.Boolean;
 }
 
 export type TypeArticlesSkeleton = EntrySkeletonType<

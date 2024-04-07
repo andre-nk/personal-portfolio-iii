@@ -7,8 +7,10 @@ import type {
 } from "contentful";
 
 export interface TypeProjectFields {
+  thumbnail: EntryFieldTypes.AssetLink;
   shortTitle: EntryFieldTypes.Symbol;
   longTitle: EntryFieldTypes.Symbol;
+  isFeatured?: EntryFieldTypes.Boolean;
   caption: EntryFieldTypes.RichText;
   article: EntryFieldTypes.RichText;
   startDate: EntryFieldTypes.Date;
