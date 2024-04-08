@@ -8,7 +8,7 @@ export default async function ArticleSection() {
   const articles = await getFeaturedArticles();
 
   return (
-    <div className="flex flex-col space-y-16 md:space-y-12">
+    <div className="flex flex-col space-y-16 md:space-y-0">
       <div className="flex flex-col space-y-[2rem]">
         <h2 className="font-body text-[3.5rem]">Articles</h2>
         <div className="h-[1px] w-full bg-black md:w-full" />

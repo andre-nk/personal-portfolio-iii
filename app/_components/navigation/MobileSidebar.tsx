@@ -5,12 +5,26 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function MobileSidebar() {
+export default function MobileSidebar({ isVariant }: { isVariant?: boolean }) {
   return (
     <Sheet>
-      <SheetTrigger className="rounded-lg border bg-white p-3 transition duration-300 hover:bg-primary-gray hover:bg-opacity-[0.075] lg:hidden">
-        <MenuIcon />
-      </SheetTrigger>
+      <div
+        className={`lg:hidden ${isVariant && "flex w-full items-center justify-between"}`}
+      >
+        {isVariant && (
+          <Link href="/" className="relative h-8 w-[40%]">
+            <Image
+              src={"/images/logo_width_variant.svg"}
+              fill
+              alt="logo"
+              className="h-full object-cover"
+            />
+          </Link>
+        )}
+        <SheetTrigger className="rounded-lg border bg-white p-3 transition duration-300 hover:bg-primary-gray hover:bg-opacity-[0.075]">
+          <MenuIcon />
+        </SheetTrigger>
+      </div>
       <SheetContent className="flex h-full flex-col items-center justify-between px-8">
         <Image
           src={"/images/logo_width_variant.svg"}

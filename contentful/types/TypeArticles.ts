@@ -7,11 +7,12 @@ import type {
 } from "contentful";
 
 export interface TypeArticlesFields {
+  thumbnail: EntryFieldTypes.AssetLink;
   title: EntryFieldTypes.Symbol;
+  slug: EntryFieldTypes.Symbol;
+  isFeatured?: EntryFieldTypes.Boolean;
   content?: EntryFieldTypes.RichText;
   releasedDate: EntryFieldTypes.Date;
-  thumbnail: EntryFieldTypes.AssetLink;
-  isFeatured?: EntryFieldTypes.Boolean;
 }
 
 export type TypeArticlesSkeleton = EntrySkeletonType<

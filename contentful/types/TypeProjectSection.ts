@@ -7,6 +7,7 @@ import type {
 } from "contentful";
 
 export interface TypeProjectSectionFields {
+  title: EntryFieldTypes.Symbol;
   content: EntryFieldTypes.RichText;
 }
 

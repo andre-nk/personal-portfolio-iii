@@ -9,6 +9,7 @@ import type {
 export interface TypeProjectFields {
   thumbnail: EntryFieldTypes.AssetLink;
   shortTitle: EntryFieldTypes.Symbol;
+  slug?: EntryFieldTypes.Symbol;
   longTitle: EntryFieldTypes.Symbol;
   isFeatured?: EntryFieldTypes.Boolean;
   caption: EntryFieldTypes.RichText;
