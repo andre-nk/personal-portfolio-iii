@@ -41,7 +41,7 @@ export default function ProjectTile({
               {new Date(project.fields.startDate).getFullYear()}
             </p>
           </div>
-          <div className="flex flex-col lg:h-[30vh] lg:w-[61%] lg:justify-between">
+          <div className="flex flex-col lg:h-[40vh] lg:w-[61%] lg:justify-between xl:h-[30vh]">
             <div className="w-full font-light text-primary-gray md:text-base lg:w-full lg:text-xl">
               {documentToReactComponents(project.fields.caption)}
             </div>

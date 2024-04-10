@@ -10,6 +10,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Footer from "@/app/_components/footer/Footer";
 import MobileSidebar from "@/app/_components/navigation/MobileSidebar";
 import CTASection from "@/app/_components/cta/CTASection";
+import DesktopNavBar from "@/app/_components/navigation/DesktopNavBar";
 
 export default async function ProjectPage({
   params,
@@ -22,8 +23,9 @@ export default async function ProjectPage({
     <div>
       <div className="m-default py-6">
         <MobileSidebar isVariant />
+        <DesktopNavBar isVariant />
       </div>
-      <div className="m-default flex flex-col space-y-12 py-24">
+      <div className="m-default flex flex-col space-y-12 py-24 lg:space-y-36">
         <div className="flex flex-col space-y-6">
           <div className="flex flex-col space-y-6">
             <h1 className="font-body text-5xl font-light">
@@ -40,10 +42,10 @@ export default async function ProjectPage({
             />
           </div>
         </div>
-        <div className="prose font-light">
+        <div className="prose font-light lg:w-[60%] lg:self-center">
           {documentToReactComponents(project.fields.article)}
         </div>
-        <div className="flex flex-col space-y-6 pb-24">
+        <div className="flex flex-col space-y-6 pb-24 lg:w-[60%]">
           <h2 className="font-body text-4xl font-light">Info</h2>
           <div className="flex flex-col space-y-3.5">
             <div className="flex flex-col space-y-3">

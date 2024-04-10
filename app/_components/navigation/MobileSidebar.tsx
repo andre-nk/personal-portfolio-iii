@@ -12,7 +12,7 @@ export default function MobileSidebar({ isVariant }: { isVariant?: boolean }) {
         className={`lg:hidden ${isVariant && "flex w-full items-center justify-between"}`}
       >
         {isVariant && (
-          <Link href="/" className="relative h-8 w-[40%]">
+          <Link href="/" className="relative h-8 w-[40%] md:w-[20%]">
             <Image
               src={"/images/logo_width_variant.svg"}
               fill
@@ -38,19 +38,19 @@ export default function MobileSidebar({ isVariant }: { isVariant?: boolean }) {
             Home
           </Link>
           <Link
-            href="/about"
+            href="/#about"
             className="transition duration-300 hover:underline"
           >
             About
           </Link>
           <Link
-            href="/projects"
+            href="/project"
             className="transition duration-300 hover:underline"
           >
             Projects
           </Link>
           <Link
-            href="/blog"
+            href="/articles"
             className="transition duration-300 hover:underline"
           >
             Articles

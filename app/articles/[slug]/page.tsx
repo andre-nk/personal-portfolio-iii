@@ -8,6 +8,7 @@ import MobileSidebar from "@/app/_components/navigation/MobileSidebar";
 import { getArticleBySlug } from "@/contentful/lib";
 import { getHttpsUrl } from "@/lib/utils";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import DesktopNavBar from "@/app/_components/navigation/DesktopNavBar";
 
 export default async function ArticlePage({
   params,
@@ -20,15 +21,16 @@ export default async function ArticlePage({
     <div>
       <div className="m-default py-6">
         <MobileSidebar isVariant />
+        <DesktopNavBar isVariant />
       </div>
       <div className="m-default flex flex-col space-y-12 py-24">
         <div className="flex flex-col space-y-6">
           <div className="flex flex-col space-y-6">
-            <div className="flex flex-col space-y-2">
-              <h1 className="font-body text-4xl font-light leading-snug">
+            <div className="flex flex-col space-y-2 lg:space-y-6">
+              <h1 className="font-body text-4xl font-light lg:text-5xl xl:text-7xl">
                 {article.fields.title}
               </h1>
-              <p className="text-primary-gray">
+              <p className="text-primary-gray lg:text-xl">
                 {new Intl.DateTimeFormat("en-US", {
                   month: "short",
                   day: "numeric",
@@ -47,7 +49,7 @@ export default async function ArticlePage({
             />
           </div>
         </div>
-        <div className="prose font-light">
+        <div className="prose font-light lg:text-lg xl:text-xl">
           {documentToReactComponents(article.fields.content!)}
         </div>
         <CTASection />

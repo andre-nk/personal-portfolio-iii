@@ -9,7 +9,7 @@ export default async function AboutSection() {
   const aboutContent = await getAboutContent();
 
   return (
-    <div>
+    <div id="about">
       <div className="flex flex-col space-y-[2rem]">
         <h2 className="font-body text-[3.5rem]">About</h2>
         <div className="h-[1px] w-full bg-black" />

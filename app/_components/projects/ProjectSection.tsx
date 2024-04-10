@@ -13,7 +13,7 @@ export default async function ProjectSection() {
     <div className="flex flex-col space-y-16 md:space-y-36">
       <div className="flex flex-col space-y-[2rem]">
         <div className="flex flex-col space-y-[2rem]">
-          <h2 className="font-body text-[3.5rem]">Works</h2>
+          <h2 className="font-body text-[3.5rem]">Projects</h2>
           <div className="h-[1px] w-full bg-black md:w-[75%]" />
         </div>
         <div className="w-full md:flex md:w-full md:justify-center md:text-base lg:text-xl">

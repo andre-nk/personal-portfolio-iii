@@ -25,13 +25,13 @@ export default function Footer() {
             About
           </Link>
           <Link
-            href="/projects"
+            href="/project"
             className="transition duration-300 hover:underline"
           >
             Projects
           </Link>
           <Link
-            href="/blog"
+            href="/articles"
             className="transition duration-300 hover:underline"
           >
             Articles
