@@ -7,6 +7,7 @@ import localFont from "next/font/local";
 
 import "./globals.css";
 import SmoothScrollWrapper from "@/components/smooth-scroll-wrapper";
+import TerminalContextProvider from "@/contexts/TerminalContext";
 
 export const metadata: Metadata = {
   title: {
@@ -111,7 +112,9 @@ export default function RootLayout({
       <body
         className={`${GeistSans.variable} ${GeistMono.variable} ${fivoSans.variable} font-sans`}
       >
-        <SmoothScrollWrapper>{children}</SmoothScrollWrapper>
+        <TerminalContextProvider>
+          <SmoothScrollWrapper>{children}</SmoothScrollWrapper>
+        </TerminalContextProvider>
       </body>
     </html>
   );

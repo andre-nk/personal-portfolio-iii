@@ -28,7 +28,7 @@ export default async function ProjectPage({
       <div className="m-default flex flex-col space-y-12 py-24 lg:space-y-36">
         <div className="flex flex-col space-y-6">
           <div className="flex flex-col space-y-6">
-            <h1 className="font-body text-5xl font-light">
+            <h1 className="leading-1 font-body text-6xl font-light">
               {project.fields.longTitle}
             </h1>
             <div className="h-[1px] w-full bg-primary-gray bg-opacity-50" />
@@ -42,8 +42,26 @@ export default async function ProjectPage({
             />
           </div>
         </div>
-        <div className="prose font-light lg:w-[60%] lg:self-center">
-          {documentToReactComponents(project.fields.article)}
+        <div className="prose text-lg font-light lg:w-[60%] lg:self-center">
+          {documentToReactComponents(project.fields.article, {
+            renderNode: {
+              "embedded-asset-block": (node) => (
+                <div className="flex flex-col justify-center space-y-2">
+                  <div className="relative aspect-video w-full">
+                    <Image
+                      src={getHttpsUrl(node.data.target.fields.file.url)}
+                      alt={node.data.target.fields.title}
+                      fill
+                      objectFit="cover"
+                    />
+                  </div>
+                  <p className="text-sm italic">
+                    {node.data.target.fields.description}
+                  </p>
+                </div>
+              ),
+            },
+          })}
         </div>
         <div className="flex flex-col space-y-6 pb-24 lg:w-[60%]">
           <h2 className="font-body text-4xl font-light">Info</h2>

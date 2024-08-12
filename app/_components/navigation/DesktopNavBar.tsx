@@ -19,7 +19,7 @@ export default function DesktopNavBar({ isVariant }: { isVariant?: boolean }) {
         </Link>
       )}
       <div
-        className={`flex justify-end space-x-16 ${isVariant && "text-base"}`}
+        className={`flex justify-end space-x-16 font-light ${isVariant && "text-base"}`}
       >
         <Link href="/" className="transition duration-300 hover:underline">
           Home

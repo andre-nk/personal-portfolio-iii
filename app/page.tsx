@@ -1,5 +1,4 @@
 import MobileSidebar from "./_components/navigation/MobileSidebar";
-import Headline from "./_components/hero/Headline";
 import DesktopGradient from "./_components/hero/DesktopGradient";
 import Terminal from "./_components/hero/Terminal";
 import ContactButton from "./_components/hero/ContactButton";
@@ -13,6 +12,8 @@ import ProjectSection from "./_components/projects/ProjectSection";
 import ArticleSection from "./_components/articles/ArticleSection";
 import CTASection from "./_components/cta/CTASection";
 import Footer from "./_components/footer/Footer";
+import Headline from "./_components/hero/Headline";
+import TerminalOutput from "./_components/hero/TerminalOutput";
 
 export default async function Home() {
   return (
@@ -23,17 +24,24 @@ export default async function Home() {
       <div className="relative flex min-h-screen w-full flex-col items-center justify-start lg:justify-center">
         <div className="m-default absolute left-1/2 top-1/2 z-10 flex h-[80vh] w-full -translate-x-1/2 -translate-y-1/2 transform items-center justify-between lg:h-fit lg:flex-col lg:items-center lg:justify-center">
           <div className="flex h-full flex-col justify-between py-[5rem] lg:h-fit lg:w-full lg:py-0">
-            <div className="flex flex-col space-y-[2.5rem] lg:w-full lg:justify-center lg:space-y-0 lg:px-[2.5vw] xl:px-[8vw] 2xl:px-[6vw]">
+            <div className="flex flex-col space-y-[2.5rem] lg:w-full lg:justify-center lg:space-y-0 lg:px-[6vw] xl:px-[10vw] 2xl:px-[12vw]">
               <Headline />
               <DesktopGradient />
               <div className="flex w-[85%] flex-col space-y-[1rem] lg:w-full lg:flex-row lg:space-x-12 lg:space-y-0 lg:pt-[4vh]">
-                <div className="flex w-full items-center justify-center rounded-xl border-[1px] border-primary-gray bg-white px-4 py-3 pt-3.5 sm:px-6 lg:justify-start lg:overflow-clip lg:py-0 lg:pl-0">
-                  <Terminal />
-                  <h3 className="font-body sm:text-lg md:text-xl lg:hidden">
-                    Software Engineer
-                  </h3>
+                <div className="hidden w-full flex-col lg:flex">
+                  <div className="space-between flex w-full items-start lg:space-x-8">
+                    <div className="relative flex w-full flex-col">
+                      <div className="flex w-full items-center justify-center rounded-xl border-[1px] border-primary-gray bg-white px-4 py-3 pt-3.5 sm:px-6 lg:flex lg:justify-start lg:overflow-clip lg:py-0 lg:pl-0">
+                        <Terminal />
+                      </div>
+                      <TerminalOutput />
+                    </div>
+                    <ContactButton />
+                  </div>
                 </div>
-                <ContactButton />
+                <div className="flex w-full items-center justify-center rounded-xl border-[1px] border-primary-gray bg-white px-4 py-3 pt-3.5 sm:px-6 lg:hidden lg:justify-start lg:overflow-clip lg:py-0 lg:pl-0">
+                  <p>Software Engineer</p>
+                </div>
               </div>
             </div>
             <LocationTag />
