@@ -2,6 +2,9 @@ import React from "react";
 
 import Link from "next/link";
 import Image from "next/image";
+import { DialogTrigger } from "@radix-ui/react-dialog";
+import { Dialog } from "@/components/ui/dialog";
+import ContactDialog from "../contact/ContactDialog";
 
 export default function DesktopNavBar({ isVariant }: { isVariant?: boolean }) {
   return (
@@ -43,12 +46,12 @@ export default function DesktopNavBar({ isVariant }: { isVariant?: boolean }) {
         >
           Articles
         </Link>
-        <Link
-          href="/contact"
-          className="transition duration-300 hover:underline"
-        >
-          Contacts
-        </Link>
+        <Dialog>
+          <ContactDialog />
+          <DialogTrigger className="transition duration-300 hover:underline">
+            Contacts
+          </DialogTrigger>
+        </Dialog>
       </div>
     </div>
   );

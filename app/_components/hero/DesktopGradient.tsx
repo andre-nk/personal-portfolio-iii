@@ -8,7 +8,7 @@ export default function DesktopGradient({
   return (
     <div
       id="desktop-gradient-bar"
-      className={`${isVariant ? "h-2.5" : "hidden h-3"} w-full lg:block`}
+      className={`${isVariant ? "h-1.5" : "hidden h-3"} w-full lg:block`}
     />
   );
 }

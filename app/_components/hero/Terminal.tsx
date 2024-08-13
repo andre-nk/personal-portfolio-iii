@@ -1,18 +1,33 @@
 "use client";
 
-import React, { useContext, useEffect, useState } from "react";
+import React, { useCallback, useContext, useEffect, useState } from "react";
 import TerminalInput from "./TerminalInput";
 import { TerminalContext } from "@/contexts/TerminalContext";
 
 export default function Terminal() {
   const [isActive, setIsActive] = useState(false);
-  const { command, setCommand } = useContext(TerminalContext);
+  const { setCommand } = useContext(TerminalContext);
 
   useEffect(() => {
+    let timeoutId: ReturnType<typeof setTimeout> | undefined;
     if (!isActive) {
-      setCommand([...(command ?? []), "clear"]);
+      timeoutId = setTimeout(() => {
+        setCommand((prevCommand) => {
+          if (prevCommand && prevCommand[prevCommand.length - 1] !== "clear") {
+            return [...prevCommand, "clear"];
+          }
+          return prevCommand;
+        });
+      }, 0);
     }
-  }, [command, isActive, setCommand]);
+    return () => {
+      if (timeoutId !== undefined) clearTimeout(timeoutId);
+    };
+  }, [isActive, setCommand]);
+
+  const toggleActive = useCallback(() => {
+    setIsActive((prev) => !prev);
+  }, []);
 
   return (
     <div
@@ -22,7 +37,7 @@ export default function Terminal() {
         className={`m-2 flex items-center space-x-2 ${isActive ? "lg:w-[22.5%] xl:w-[20%] 2xl:w-[20%]" : "w-auto"}`}
       >
         <button
-          onClick={() => setIsActive(!isActive)}
+          onClick={toggleActive}
           className="group rounded-md bg-white px-2.5 py-3 transition duration-100 hover:bg-primary-gray hover:bg-opacity-[0.05]"
         >
           <svg

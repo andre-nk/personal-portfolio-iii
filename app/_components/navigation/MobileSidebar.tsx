@@ -4,6 +4,9 @@ import { MenuIcon } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import Link from "next/link";
 import Image from "next/image";
+import { DialogTrigger } from "@radix-ui/react-dialog";
+import { Dialog } from "@/components/ui/dialog";
+import ContactDialog from "../contact/ContactDialog";
 
 export default function MobileSidebar({ isVariant }: { isVariant?: boolean }) {
   return (
@@ -55,12 +58,12 @@ export default function MobileSidebar({ isVariant }: { isVariant?: boolean }) {
           >
             Articles
           </Link>
-          <Link
-            href="/contact"
-            className="transition duration-300 hover:underline"
-          >
-            Contacts
-          </Link>
+          <Dialog>
+            <ContactDialog />
+            <DialogTrigger className="transition duration-300 hover:underline">
+              Contacts
+            </DialogTrigger>
+          </Dialog>
         </div>
         <p>Made with ❤️ from Indonesia</p>
       </SheetContent>

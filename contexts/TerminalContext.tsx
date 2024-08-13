@@ -7,7 +7,19 @@ export type InputCommand = {
   command: string;
 };
 
-export const AUTOCOMPLETE_COMMANDS = ["cd", "clear", "man", "ls"];
+export const AUTOCOMPLETE_COMMANDS = [
+  "cd",
+  "cd /",
+  "cd about",
+  "cd projects",
+  "cd articles",
+  "cd contact",
+  "clear",
+  "man",
+  "ls",
+  "lang",
+  "lang cn",
+];
 
 interface TerminalContextState {
   command: string[] | null;
@@ -34,6 +46,8 @@ export default function TerminalContextProvider({
   useEffect(() => {
     const lastCommand = command?.[command.length - 1];
 
+    console.log(lastCommand);
+
     if (lastCommand === "clear") {
       setCommand([]);
       setOutput(null);
@@ -43,7 +57,7 @@ export default function TerminalContextProvider({
       if (lastCommand === "cd /") {
         router.push("/");
       } else if (lastCommand === "cd about") {
-        router.push("/about");
+        router.push("/#about");
       } else if (lastCommand === "cd projects") {
         router.push("/projects");
       } else if (lastCommand === "cd articles") {
@@ -55,6 +69,11 @@ export default function TerminalContextProvider({
       }
     } else if (lastCommand === "man") {
       setOutput("cd [dir] \nls \nclear \nman \n");
+    } else if (
+      lastCommand !== undefined &&
+      !AUTOCOMPLETE_COMMANDS.includes(lastCommand || "")
+    ) {
+      setOutput(`an: command not found: ${lastCommand}`);
     }
   }, [command, router]);
 
