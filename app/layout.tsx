@@ -8,6 +8,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import SmoothScrollWrapper from "@/components/smooth-scroll-wrapper";
 import TerminalContextProvider from "@/contexts/TerminalContext";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: {
@@ -115,6 +116,7 @@ export default function RootLayout({
         <TerminalContextProvider>
           <SmoothScrollWrapper>{children}</SmoothScrollWrapper>
         </TerminalContextProvider>
+        <Analytics />
       </body>
     </html>
   );
