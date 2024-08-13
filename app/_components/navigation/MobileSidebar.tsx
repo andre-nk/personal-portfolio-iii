@@ -60,7 +60,7 @@ export default function MobileSidebar({ isVariant }: { isVariant?: boolean }) {
           </Link>
           <Dialog>
             <ContactDialog />
-            <DialogTrigger className="transition duration-300 hover:underline">
+            <DialogTrigger className="text-start transition duration-300 hover:underline">
               Contacts
             </DialogTrigger>
           </Dialog>
