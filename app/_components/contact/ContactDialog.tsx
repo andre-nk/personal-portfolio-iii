@@ -33,7 +33,7 @@ export default function ContactDialog() {
           If you would like to get in touch, feel free to send me a message.
         </DialogDescription>
         <div className="flex w-full space-x-4 pt-3">
-          <Link href="mailto:andreasnotokusumo23@gmail.com">
+          <Link href="mailto:contact@andrenk.me">
             <Mail className=" h-6 w-6 text-black" />
           </Link>
           <Link href="https://github.com/andre-nk">

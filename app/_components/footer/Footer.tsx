@@ -2,6 +2,8 @@ import React from "react";
 
 import Link from "next/link";
 import Image from "next/image";
+import { Dialog, DialogTrigger } from "@/components/ui/dialog";
+import ContactDialog from "../contact/ContactDialog";
 
 export default function Footer() {
   return (
@@ -36,29 +38,32 @@ export default function Footer() {
           >
             Articles
           </Link>
-          <Link
-            href="/contact"
-            className="transition duration-300 hover:underline"
-          >
-            Contacts
-          </Link>
+          <Dialog>
+            <ContactDialog />
+            <DialogTrigger className="transition duration-300 hover:underline">
+              Contacts
+            </DialogTrigger>
+          </Dialog>
         </div>
         <div className="flex flex-col space-y-6 text-white">
-          <Link href="/" className="transition duration-300 hover:underline">
+          <Link
+            href="https://github.com/andre-nk"
+            className="transition duration-300 hover:underline"
+          >
             GITHUB
           </Link>
           <Link
-            href="/about"
+            href="https://www.linkedin.com/in/andreasnk/"
             className="transition duration-300 hover:underline"
           >
             LINKEDIN
           </Link>
         </div>
         <Link
-          href="/about"
+          href="mailto:contact@andrenk.me"
           className="text-white transition duration-300 hover:underline"
         >
-          CONTACT@ANDRENK.DEV
+          CONTACT@ANDRENK.ME
         </Link>
       </div>
     </div>

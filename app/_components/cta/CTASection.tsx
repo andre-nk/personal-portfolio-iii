@@ -1,5 +1,6 @@
-import Link from "next/link";
+import { Dialog, DialogTrigger } from "@/components/ui/dialog";
 import React from "react";
+import ContactDialog from "../contact/ContactDialog";
 
 export default function CTASection() {
   return (
@@ -10,12 +11,12 @@ export default function CTASection() {
           <h2 className="font-body text-[4.75rem] font-light leading-[5rem] lg:text-[5rem]">
             Start a project?
           </h2>
-          <Link
-            href="https://wa.me/6282243010141"
-            className="text-lg font-light text-primary-gray underline"
-          >
-            CONTACT ME →
-          </Link>
+          <Dialog>
+            <ContactDialog />
+            <DialogTrigger className="text-lg font-light text-primary-gray underline">
+              CONTACT ME →
+            </DialogTrigger>
+          </Dialog>
         </div>
       </div>
     </div>

@@ -13,7 +13,6 @@ export const AUTOCOMPLETE_COMMANDS = [
   "cd about",
   "cd projects",
   "cd articles",
-  "cd contact",
   "clear",
   "man",
   "ls",
@@ -52,7 +51,7 @@ export default function TerminalContextProvider({
       setCommand([]);
       setOutput(null);
     } else if (lastCommand === "ls") {
-      setOutput("/ \n/about \n/projects \n/articles \n/contact");
+      setOutput("/ \n/about \n/projects \n/articles");
     } else if (lastCommand !== undefined && lastCommand.includes("cd")) {
       if (lastCommand === "cd /") {
         router.push("/");
@@ -62,8 +61,6 @@ export default function TerminalContextProvider({
         router.push("/projects");
       } else if (lastCommand === "cd articles") {
         router.push("/articles");
-      } else if (lastCommand === "cd contact") {
-        router.push("/contact");
       } else {
         setOutput(`cd: no such file or directory: ${lastCommand}`);
       }
