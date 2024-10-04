@@ -2,10 +2,10 @@ import React from "react";
 
 import DesktopNavBar from "../_components/navigation/DesktopNavBar";
 import MobileSidebar from "../_components/navigation/MobileSidebar";
-import ArticleCard from "../_components/articles/ArticleCard";
 import Footer from "../_components/footer/Footer";
 
 import { getFeaturedArticles } from "@/contentful/lib";
+import ArticleCard from "../_components/articles/ArticleCard";
 
 export default async function ArticlesPage() {
   const articles = await getFeaturedArticles();

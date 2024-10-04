@@ -4,7 +4,7 @@ import Image from "next/image";
 import { TypeArticles } from "@/contentful/types";
 import Link from "next/link";
 
-export default function ArticleCard({
+export default function HomeArticleCard({
   article,
 }: {
   article: TypeArticles<"WITHOUT_UNRESOLVABLE_LINKS", "en-US">;
@@ -13,7 +13,7 @@ export default function ArticleCard({
     <Link
       href={`/articles/${article.fields.slug}`}
       key={article.sys.id}
-      className="flex w-full flex-col"
+      className="flex w-[47.5%] flex-col"
     >
       <Image
         src={`https:${article.fields.thumbnail?.fields.file?.url}`}

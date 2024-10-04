@@ -2,7 +2,7 @@ import { getFeaturedArticles } from "@/contentful/lib";
 
 import React from "react";
 import Link from "next/link";
-import ArticleCard from "./ArticleCard";
+import HomeArticleCard from "./HomeArticleCard";
 
 export default async function ArticleSection() {
   const articles = await getFeaturedArticles();
@@ -14,9 +14,9 @@ export default async function ArticleSection() {
         <div className="h-[1px] w-full bg-black md:w-full" />
       </div>
       <div className="flex flex-col space-y-12 md:items-end md:space-y-20">
-        <div className="flex flex-col space-y-12 md:w-[75%] md:flex-row md:items-end md:space-x-12">
+        <div className="flex flex-col justify-end space-y-12 pt-8 md:w-[75%] md:flex-row md:items-end md:space-x-12">
           {articles.map((article) => (
-            <ArticleCard article={article} key={article.sys.id} />
+            <HomeArticleCard article={article} key={article.sys.id} />
           ))}
         </div>
         <div className="flex flex-col space-y-6 md:w-[75%]">

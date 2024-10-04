@@ -41,7 +41,7 @@ export default function Footer() {
           <Dialog>
             <ContactDialog />
             <DialogTrigger className="transition duration-300 hover:underline">
-              Contacts
+              CONTACTS
             </DialogTrigger>
           </Dialog>
         </div>
