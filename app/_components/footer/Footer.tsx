@@ -27,7 +27,7 @@ export default function Footer() {
             About
           </Link>
           <Link
-            href="/project"
+            href="/projects"
             className="transition duration-300 hover:underline"
           >
             Projects

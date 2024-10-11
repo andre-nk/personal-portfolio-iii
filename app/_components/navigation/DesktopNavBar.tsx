@@ -35,7 +35,7 @@ export default function DesktopNavBar({ isVariant }: { isVariant?: boolean }) {
           About
         </Link>
         <Link
-          href="/project"
+          href="/projects"
           className="transition duration-300 hover:underline"
         >
           Projects

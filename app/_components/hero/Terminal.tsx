@@ -65,7 +65,7 @@ export default function Terminal() {
         </div>
       ) : (
         <h3 className="hidden pt-0.5 font-body sm:text-lg lg:block lg:text-[0.95rem] xl:text-base">
-          Software Engineer based in Yogyakarta, Indonesia
+          CS Student and SWE based in Yogyakarta, Indonesia
         </h3>
       )}
     </div>

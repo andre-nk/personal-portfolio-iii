@@ -58,8 +58,7 @@
           "type": "Symbol",
           "localized": false,
           "required": false,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -104,8 +103,7 @@
               "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to Url, link to entry, link to asset, and inline entry nodes are allowed"
             },
             {
-              "nodes": {
-              }
+              "nodes": {}
             }
           ],
           "disabled": false,
@@ -171,8 +169,7 @@
           "type": "Symbol",
           "localized": false,
           "required": true,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -217,8 +214,7 @@
               "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to Url, link to entry, link to asset, and inline entry nodes are allowed"
             },
             {
-              "nodes": {
-              }
+              "nodes": {}
             }
           ],
           "disabled": false,
@@ -272,7 +268,7 @@
             "id": "5mj7TfaNXDpOIpSHnHEC4W"
           }
         },
-        "urn": "crn:contentful:::content:spaces/dobqt42vphlv/environments/master/content_types/project"
+        "urn": "crn:contentful:::content:spaces/dobqt42vphlv/environments/master/content_types/projects"
       },
       "displayField": "shortTitle",
       "name": "Project",
@@ -286,9 +282,7 @@
           "required": true,
           "validations": [
             {
-              "linkMimetypeGroup": [
-                "image"
-              ]
+              "linkMimetypeGroup": ["image"]
             }
           ],
           "disabled": false,
@@ -301,8 +295,7 @@
           "type": "Symbol",
           "localized": false,
           "required": true,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -312,8 +305,7 @@
           "type": "Symbol",
           "localized": false,
           "required": false,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -323,8 +315,7 @@
           "type": "Symbol",
           "localized": false,
           "required": true,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -334,8 +325,7 @@
           "type": "Boolean",
           "localized": false,
           "required": false,
-          "validations": [
-          ],
+          "validations": [],
           "defaultValue": {
             "en-US": false
           },
@@ -383,8 +373,7 @@
               "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to Url, link to entry, link to asset, and inline entry nodes are allowed"
             },
             {
-              "nodes": {
-              }
+              "nodes": {}
             }
           ],
           "disabled": false,
@@ -431,8 +420,7 @@
               "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to Url, link to entry, link to asset, and inline entry nodes are allowed"
             },
             {
-              "nodes": {
-              }
+              "nodes": {}
             }
           ],
           "disabled": false,
@@ -444,8 +432,7 @@
           "type": "Date",
           "localized": false,
           "required": true,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -455,8 +442,7 @@
           "type": "Date",
           "localized": false,
           "required": true,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -466,14 +452,12 @@
           "type": "Array",
           "localized": false,
           "required": true,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false,
           "items": {
             "type": "Symbol",
-            "validations": [
-            ]
+            "validations": []
           }
         },
         {
@@ -482,14 +466,12 @@
           "type": "Array",
           "localized": false,
           "required": true,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false,
           "items": {
             "type": "Symbol",
-            "validations": [
-            ]
+            "validations": []
           }
         },
         {
@@ -498,8 +480,7 @@
           "type": "Symbol",
           "localized": false,
           "required": true,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -509,8 +490,7 @@
           "type": "Symbol",
           "localized": false,
           "required": false,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -520,8 +500,7 @@
           "type": "Symbol",
           "localized": false,
           "required": false,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -531,8 +510,7 @@
           "type": "Symbol",
           "localized": false,
           "required": false,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         }
@@ -598,9 +576,7 @@
           "required": true,
           "validations": [
             {
-              "linkMimetypeGroup": [
-                "image"
-              ]
+              "linkMimetypeGroup": ["image"]
             }
           ],
           "disabled": false,
@@ -613,8 +589,7 @@
           "type": "Symbol",
           "localized": false,
           "required": true,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -624,8 +599,7 @@
           "type": "Symbol",
           "localized": false,
           "required": true,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -635,8 +609,7 @@
           "type": "Boolean",
           "localized": false,
           "required": false,
-          "validations": [
-          ],
+          "validations": [],
           "defaultValue": {
             "en-US": false
           },
@@ -684,8 +657,7 @@
               "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to Url, link to entry, link to asset, and inline entry nodes are allowed"
             },
             {
-              "nodes": {
-              }
+              "nodes": {}
             }
           ],
           "disabled": false,
@@ -697,16 +669,14 @@
           "type": "Date",
           "localized": false,
           "required": true,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         }
       ]
     }
   ],
-  "tags": [
-  ],
+  "tags": [],
   "editorInterfaces": [
     {
       "sys": {
@@ -1021,8 +991,7 @@
   "entries": [
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -1069,8 +1038,7 @@
             "id": "5mj7TfaNXDpOIpSHnHEC4W"
           }
         },
-        "automationTags": [
-        ],
+        "automationTags": [],
         "contentType": {
           "sys": {
             "type": "Link",
@@ -1084,21 +1052,17 @@
         "content": {
           "en-US": {
             "nodeType": "document",
-            "data": {
-            },
+            "data": {},
             "content": [
               {
                 "nodeType": "paragraph",
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
                     "nodeType": "text",
                     "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum  sollicitudin sapien quam. Phasellus orci nulla, lobortis vitae dui non,  fermentum pulvinar nunc. Vivamus at eros sem. Vivamus eget vestibulum  ante. Maecenas lacinia arcu eu eros vulputate cursus a in dui. In lectus  nunc, ultricies vel quam eu, ullamcorper ultricies ante. Praesent  scelerisque, diam ut sodales auctor, enim odio lobortis odio, id posuere  neque odio vel velit. Aliquam accumsan, lectus ac pharetra bibendum,  magna mauris ornare eros, vel posuere lorem dolor tempus quam. Aenean  iaculis faucibus dolor eu mattis. Sed tempor arcu nibh, ac vulputate  neque ultrices vitae. Sed tempor arcu nibh, ac vulputate  neque ultrices vitae.",
-                    "marks": [
-                    ],
-                    "data": {
-                    }
+                    "marks": [],
+                    "data": {}
                   }
                 ]
               }
@@ -1109,8 +1073,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -1157,8 +1120,7 @@
             "id": "5mj7TfaNXDpOIpSHnHEC4W"
           }
         },
-        "automationTags": [
-        ],
+        "automationTags": [],
         "contentType": {
           "sys": {
             "type": "Link",
@@ -1172,21 +1134,17 @@
         "content": {
           "en-US": {
             "nodeType": "document",
-            "data": {
-            },
+            "data": {},
             "content": [
               {
                 "nodeType": "paragraph",
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
                     "nodeType": "text",
                     "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum  sollicitudin sapien quam. Phasellus orci nulla, lobortis vitae dui non,  fermentum pulvinar nunc. Vivamus at eros sem. Vivamus eget vestibulum  ante. Maecenas lacinia arcu eu eros vulputate cursus a in dui. In lectus  nunc, ultricies vel quam eu",
-                    "marks": [
-                    ],
-                    "data": {
-                    }
+                    "marks": [],
+                    "data": {}
                   }
                 ]
               }
@@ -1197,8 +1155,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -1245,8 +1202,7 @@
             "id": "5mj7TfaNXDpOIpSHnHEC4W"
           }
         },
-        "automationTags": [
-        ],
+        "automationTags": [],
         "contentType": {
           "sys": {
             "type": "Link",
@@ -1274,18 +1230,14 @@
         },
         "caption": {
           "en-US": {
-            "data": {
-            },
+            "data": {},
             "content": [
               {
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum  sollicitudin sapien quam. Phasellus orci nulla, lobortis vitae dui non,  fermentum pulvinar nunc. Vivamus at eros sem. Vivamus eget vestibulum  ante. Maecenas lacinia arcu eu eros.",
                     "nodeType": "text"
                   }
@@ -1298,18 +1250,14 @@
         },
         "article": {
           "en-US": {
-            "data": {
-            },
+            "data": {},
             "content": [
               {
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum  sollicitudin sapien quam. Phasellus orci nulla, lobortis vitae dui non,  fermentum pulvinar nunc. Vivamus at eros sem. Vivamus eget vestibulum  ante. Maecenas lacinia arcu eu eros.",
                     "nodeType": "text"
                   }
@@ -1327,18 +1275,10 @@
           "en-US": "2024-04-07T00:00+07:00"
         },
         "category": {
-          "en-US": [
-            "Chat App",
-            "Mobile"
-          ]
+          "en-US": ["Chat App", "Mobile"]
         },
         "techstack": {
-          "en-US": [
-            "Firebase",
-            "Flutter",
-            "RevenueCat",
-            "Agora"
-          ]
+          "en-US": ["Firebase", "Flutter", "RevenueCat", "Agora"]
         },
         "client": {
           "en-US": "Johnny Sommers"
@@ -1347,8 +1287,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -1395,8 +1334,7 @@
             "id": "5mj7TfaNXDpOIpSHnHEC4W"
           }
         },
-        "automationTags": [
-        ],
+        "automationTags": [],
         "contentType": {
           "sys": {
             "type": "Link",
@@ -1424,18 +1362,14 @@
         },
         "caption": {
           "en-US": {
-            "data": {
-            },
+            "data": {},
             "content": [
               {
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum  sollicitudin sapien quam. Phasellus orci nulla, lobortis vitae dui non,  fermentum pulvinar nunc. Vivamus at eros sem. Vivamus eget vestibulum  ante. Maecenas lacinia arcu eu eros.",
                     "nodeType": "text"
                   }
@@ -1448,18 +1382,14 @@
         },
         "article": {
           "en-US": {
-            "data": {
-            },
+            "data": {},
             "content": [
               {
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum  sollicitudin sapien quam. Phasellus orci nulla, lobortis vitae dui non,  fermentum pulvinar nunc. Vivamus at eros sem. Vivamus eget vestibulum  ante. Maecenas lacinia arcu eu eros.",
                     "nodeType": "text"
                   }
@@ -1477,18 +1407,10 @@
           "en-US": "2024-04-07T00:00+07:00"
         },
         "category": {
-          "en-US": [
-            "Chat App",
-            "Mobile"
-          ]
+          "en-US": ["Chat App", "Mobile"]
         },
         "techstack": {
-          "en-US": [
-            "Firebase",
-            "Flutter",
-            "RevenueCat",
-            "Agora"
-          ]
+          "en-US": ["Firebase", "Flutter", "RevenueCat", "Agora"]
         },
         "client": {
           "en-US": "Johnny Sommers"
@@ -1497,8 +1419,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -1545,8 +1466,7 @@
             "id": "5mj7TfaNXDpOIpSHnHEC4W"
           }
         },
-        "automationTags": [
-        ],
+        "automationTags": [],
         "contentType": {
           "sys": {
             "type": "Link",
@@ -1574,18 +1494,14 @@
         },
         "caption": {
           "en-US": {
-            "data": {
-            },
+            "data": {},
             "content": [
               {
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum  sollicitudin sapien quam. Phasellus orci nulla, lobortis vitae dui non,  fermentum pulvinar nunc. Vivamus at eros sem. Vivamus eget vestibulum  ante. Maecenas lacinia arcu eu eros.",
                     "nodeType": "text"
                   }
@@ -1598,18 +1514,14 @@
         },
         "article": {
           "en-US": {
-            "data": {
-            },
+            "data": {},
             "content": [
               {
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum  sollicitudin sapien quam. Phasellus orci nulla, lobortis vitae dui non,  fermentum pulvinar nunc. Vivamus at eros sem. Vivamus eget vestibulum  ante. Maecenas lacinia arcu eu eros.",
                     "nodeType": "text"
                   }
@@ -1627,18 +1539,10 @@
           "en-US": "2024-04-07T00:00+07:00"
         },
         "category": {
-          "en-US": [
-            "Chat App",
-            "Mobile"
-          ]
+          "en-US": ["Chat App", "Mobile"]
         },
         "techstack": {
-          "en-US": [
-            "Firebase",
-            "Flutter",
-            "RevenueCat",
-            "Agora"
-          ]
+          "en-US": ["Firebase", "Flutter", "RevenueCat", "Agora"]
         },
         "client": {
           "en-US": "Johnny Sommers"
@@ -1647,8 +1551,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -1695,8 +1598,7 @@
             "id": "5mj7TfaNXDpOIpSHnHEC4W"
           }
         },
-        "automationTags": [
-        ],
+        "automationTags": [],
         "contentType": {
           "sys": {
             "type": "Link",
@@ -1724,18 +1626,14 @@
         },
         "caption": {
           "en-US": {
-            "data": {
-            },
+            "data": {},
             "content": [
               {
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum  sollicitudin sapien quam. Phasellus orci nulla, lobortis vitae dui non,  fermentum pulvinar nunc. Vivamus at eros sem. Vivamus eget vestibulum  ante. Maecenas lacinia arcu eu eros.",
                     "nodeType": "text"
                   }
@@ -1748,18 +1646,14 @@
         },
         "article": {
           "en-US": {
-            "data": {
-            },
+            "data": {},
             "content": [
               {
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum  sollicitudin sapien quam. Phasellus orci nulla, lobortis vitae dui non,  fermentum pulvinar nunc. Vivamus at eros sem. Vivamus eget vestibulum  ante. Maecenas lacinia arcu eu eros.",
                     "nodeType": "text"
                   }
@@ -1777,18 +1671,10 @@
           "en-US": "2024-04-07T00:00+07:00"
         },
         "category": {
-          "en-US": [
-            "Chat App",
-            "Mobile"
-          ]
+          "en-US": ["Chat App", "Mobile"]
         },
         "techstack": {
-          "en-US": [
-            "Firebase",
-            "Flutter",
-            "RevenueCat",
-            "Agora"
-          ]
+          "en-US": ["Firebase", "Flutter", "RevenueCat", "Agora"]
         },
         "client": {
           "en-US": "Johnny Sommers"
@@ -1797,8 +1683,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -1845,8 +1730,7 @@
             "id": "5mj7TfaNXDpOIpSHnHEC4W"
           }
         },
-        "automationTags": [
-        ],
+        "automationTags": [],
         "contentType": {
           "sys": {
             "type": "Link",
@@ -1874,18 +1758,14 @@
         },
         "caption": {
           "en-US": {
-            "data": {
-            },
+            "data": {},
             "content": [
               {
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum  sollicitudin sapien quam. Phasellus orci nulla, lobortis vitae dui non,  fermentum pulvinar nunc. Vivamus at eros sem. Vivamus eget vestibulum  ante. Maecenas lacinia arcu eu eros.",
                     "nodeType": "text"
                   }
@@ -1898,18 +1778,14 @@
         },
         "article": {
           "en-US": {
-            "data": {
-            },
+            "data": {},
             "content": [
               {
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum  sollicitudin sapien quam. Phasellus orci nulla, lobortis vitae dui non,  fermentum pulvinar nunc. Vivamus at eros sem. Vivamus eget vestibulum  ante. Maecenas lacinia arcu eu eros.",
                     "nodeType": "text"
                   }
@@ -1927,18 +1803,10 @@
           "en-US": "2024-04-07T00:00+07:00"
         },
         "category": {
-          "en-US": [
-            "Chat App",
-            "Mobile"
-          ]
+          "en-US": ["Chat App", "Mobile"]
         },
         "techstack": {
-          "en-US": [
-            "Firebase",
-            "Flutter",
-            "RevenueCat",
-            "Agora"
-          ]
+          "en-US": ["Firebase", "Flutter", "RevenueCat", "Agora"]
         },
         "client": {
           "en-US": "Johnny Sommers"
@@ -1947,8 +1815,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -1995,8 +1862,7 @@
             "id": "5mj7TfaNXDpOIpSHnHEC4W"
           }
         },
-        "automationTags": [
-        ],
+        "automationTags": [],
         "contentType": {
           "sys": {
             "type": "Link",
@@ -2012,18 +1878,14 @@
         },
         "content": {
           "en-US": {
-            "data": {
-            },
+            "data": {},
             "content": [
               {
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sollicitudin",
                     "nodeType": "text"
                   }
@@ -2050,8 +1912,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -2098,8 +1959,7 @@
             "id": "5mj7TfaNXDpOIpSHnHEC4W"
           }
         },
-        "automationTags": [
-        ],
+        "automationTags": [],
         "contentType": {
           "sys": {
             "type": "Link",
@@ -2115,18 +1975,14 @@
         },
         "content": {
           "en-US": {
-            "data": {
-            },
+            "data": {},
             "content": [
               {
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sollicitudin",
                     "nodeType": "text"
                   }
@@ -2158,8 +2014,7 @@
   "assets": [
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -2279,8 +2134,7 @@
       }
     }
   ],
-  "webhooks": [
-  ],
+  "webhooks": [],
   "roles": [
     {
       "name": "Author",
@@ -2288,9 +2142,7 @@
       "policies": [
         {
           "effect": "allow",
-          "actions": [
-            "create"
-          ],
+          "actions": ["create"],
           "constraint": {
             "and": [
               {
@@ -2306,9 +2158,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "read"
-          ],
+          "actions": ["read"],
           "constraint": {
             "and": [
               {
@@ -2324,9 +2174,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "update"
-          ],
+          "actions": ["update"],
           "constraint": {
             "and": [
               {
@@ -2342,9 +2190,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "create"
-          ],
+          "actions": ["create"],
           "constraint": {
             "and": [
               {
@@ -2360,9 +2206,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "read"
-          ],
+          "actions": ["read"],
           "constraint": {
             "and": [
               {
@@ -2378,9 +2222,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "update"
-          ],
+          "actions": ["update"],
           "constraint": {
             "and": [
               {
@@ -2396,19 +2238,12 @@
         }
       ],
       "permissions": {
-        "ContentModel": [
-          "read"
-        ],
-        "Settings": [
-        ],
-        "ContentDelivery": [
-        ],
-        "Environments": [
-        ],
-        "EnvironmentAliases": [
-        ],
-        "Tags": [
-        ]
+        "ContentModel": ["read"],
+        "Settings": [],
+        "ContentDelivery": [],
+        "Environments": [],
+        "EnvironmentAliases": [],
+        "Tags": []
       },
       "sys": {
         "type": "Role",
@@ -2477,19 +2312,12 @@
         }
       ],
       "permissions": {
-        "ContentModel": [
-          "read"
-        ],
-        "Settings": [
-        ],
-        "ContentDelivery": [
-        ],
-        "Environments": [
-        ],
-        "EnvironmentAliases": [
-        ],
-        "Tags": [
-        ]
+        "ContentModel": ["read"],
+        "Settings": [],
+        "ContentDelivery": [],
+        "Environments": [],
+        "EnvironmentAliases": [],
+        "Tags": []
       },
       "sys": {
         "type": "Role",
@@ -2526,9 +2354,7 @@
       "policies": [
         {
           "effect": "allow",
-          "actions": [
-            "read"
-          ],
+          "actions": ["read"],
           "constraint": {
             "and": [
               {
@@ -2544,9 +2370,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "read"
-          ],
+          "actions": ["read"],
           "constraint": {
             "and": [
               {
@@ -2562,9 +2386,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "update"
-          ],
+          "actions": ["update"],
           "constraint": {
             "and": [
               {
@@ -2587,9 +2409,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "update"
-          ],
+          "actions": ["update"],
           "constraint": {
             "and": [
               {
@@ -2612,19 +2432,12 @@
         }
       ],
       "permissions": {
-        "ContentModel": [
-          "read"
-        ],
-        "Settings": [
-        ],
-        "ContentDelivery": [
-        ],
-        "Environments": [
-        ],
-        "EnvironmentAliases": [
-        ],
-        "Tags": [
-        ]
+        "ContentModel": ["read"],
+        "Settings": [],
+        "ContentDelivery": [],
+        "Environments": [],
+        "EnvironmentAliases": [],
+        "Tags": []
       },
       "sys": {
         "type": "Role",

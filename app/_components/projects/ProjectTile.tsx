@@ -19,7 +19,7 @@ export default function ProjectTile({
       <div className="hidden h-[1px] w-full bg-black md:block" />
       <div className="flex flex-col space-y-5 md:flex-row-reverse md:items-start md:justify-between md:space-y-0">
         <Link
-          href={`/project/${project.fields.slug}`}
+          href={`/projects/${project.fields.slug}`}
           className="flex flex-col space-y-4 md:w-[40%] md:space-y-0 lg:pl-24"
         >
           <div className="h-[1px] w-full bg-black md:hidden" />
@@ -46,7 +46,7 @@ export default function ProjectTile({
               {documentToReactComponents(project.fields.caption)}
             </div>
             <Link
-              href={`/project/${project.fields.slug}`}
+              href={`/projects/${project.fields.slug}`}
               className="hidden font-light text-primary-gray underline hover:text-blue-700 lg:block"
             >
               LEARN MORE
@@ -55,7 +55,7 @@ export default function ProjectTile({
         </div>
       </div>
       <Link
-        href={`/project/${project.fields.slug}`}
+        href={`/projects/${project.fields.slug}`}
         className="font-light text-primary-gray underline lg:hidden"
       >
         LEARN MORE
