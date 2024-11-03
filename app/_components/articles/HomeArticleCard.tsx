@@ -13,7 +13,7 @@ export default function HomeArticleCard({
     <Link
       href={`/articles/${article.fields.slug}`}
       key={article.sys.id}
-      className="flex w-[47.5%] flex-col"
+      className="flex w-full flex-col lg:w-[47.5%]"
     >
       <Image
         src={`https:${article.fields.thumbnail?.fields.file?.url}`}

@@ -40,7 +40,7 @@ export default function Footer() {
           </Link>
           <Dialog>
             <ContactDialog />
-            <DialogTrigger className="transition duration-300 hover:underline">
+            <DialogTrigger className="text-start transition duration-300 hover:underline">
               CONTACTS
             </DialogTrigger>
           </Dialog>

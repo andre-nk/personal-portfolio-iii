@@ -25,7 +25,7 @@ export default function ContactDialog() {
       </div>
       <div className="grid gap-3 px-6 pb-2 pt-4">
         <DialogHeader>
-          <DialogTitle>Hi there!</DialogTitle>
+          <DialogTitle className="text-start">Hi there!</DialogTitle>
         </DialogHeader>
         <DialogDescription>
           Thank you for visiting this site! 🤗

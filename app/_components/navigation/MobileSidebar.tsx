@@ -28,7 +28,7 @@ export default function MobileSidebar({ isVariant }: { isVariant?: boolean }) {
           <MenuIcon />
         </SheetTrigger>
       </div>
-      <SheetContent className="flex h-full flex-col items-center justify-between px-8">
+      <SheetContent className="flex h-full flex-col items-center justify-between px-8 pb-12">
         <Image
           src={"/images/logo_width_variant.svg"}
           width={250}
